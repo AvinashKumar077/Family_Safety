@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+        bottomBar.selectedItemId = R.id.nav_home
 
 
     }

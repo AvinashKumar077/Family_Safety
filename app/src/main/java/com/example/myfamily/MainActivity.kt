@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             if(allPermissionGranted()){
 
             }else{
-                
+
             }
         }
     }

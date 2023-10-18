@@ -26,6 +26,8 @@
         android:padding="16dp"
         android:text="Continue With Google"
         app:cornerRadius="16dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#2a9d8f"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

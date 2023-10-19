@@ -1,4 +1,4 @@
-package com.example.myfamily
+package com.example.securefamily
 
 import android.view.LayoutInflater
 import android.view.View

@@ -1,4 +1,4 @@
-package com.example.myfamily
+package com.example.securefamily
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,10 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 
-class DashBoardFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+class ProfileFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,12 +19,12 @@ class DashBoardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dash_board, container, false)
+        return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
     companion object {
 
         @JvmStatic
-        fun newInstance() = DashBoardFragment()
+        fun newInstance() = ProfileFragment()
     }
 }

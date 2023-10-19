@@ -1,4 +1,4 @@
-package com.example.myfamily
+package com.example.securefamily
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

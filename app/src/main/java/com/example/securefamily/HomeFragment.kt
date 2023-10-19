@@ -1,4 +1,4 @@
-package com.example.myfamily
+package com.example.securefamily
 
 import android.os.Bundle
 import android.provider.ContactsContract
@@ -10,11 +10,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myfamily.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 import kotlin.collections.ArrayList
 
 

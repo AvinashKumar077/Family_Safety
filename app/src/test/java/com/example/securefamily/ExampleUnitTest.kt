@@ -1,4 +1,4 @@
-package com.example.myfamily
+package com.example.securefamily
 
 import org.junit.Test
 

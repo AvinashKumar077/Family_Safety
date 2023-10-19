@@ -1,4 +1,4 @@
-package com.example.myfamily
+package com.example.securefamily
 
 data class MemberModel(
     val name:String,

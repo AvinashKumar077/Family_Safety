@@ -1,8 +1,7 @@
-package com.example.myfamily
+package com.example.securefamily
 
 import android.content.Context
 import android.content.SharedPreferences
-import android.media.MediaCodec.MetricsConstants.MODE
 
 object SharedPref {
 

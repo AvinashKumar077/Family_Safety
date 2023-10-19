@@ -1,14 +1,18 @@
 package com.example.securefamily
-
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.os.Bundle
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.firestore
+import com.google.firebase.firestore.ktx.firestore
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,6 +51,26 @@ class MainActivity : AppCompatActivity() {
             true
         }
         bottomBar.selectedItemId = R.id.nav_home
+
+        val auth = FirebaseAuth.getInstance().currentUser
+        val name = auth?.displayName.toString()
+        val mail = auth?.email.toString()
+        val phoneNumber = auth?.phoneNumber.toString()
+        val imageUrl = auth?.photoUrl.toString()
+
+        val db = Firebase.firestore
+
+        // Create a new user with a first and last name
+        val user = hashMapOf(
+            "name" to name,
+            "mail" to mail,
+            "phoneNumber" to phoneNumber,
+            "imageUrl" to imageUrl,
+        )
+    db.collection("users").document(mail).set(user)
+        .addOnSuccessListener {  }
+        .addOnFailureListener {  }
+// Add a new document with a generated ID
 
 
     }

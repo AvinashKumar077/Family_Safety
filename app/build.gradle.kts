@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myfamily"
+    namespace = "com.example.securefamily"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.myfamily"
+        applicationId = "com.example.securefamily"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -64,5 +64,7 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
 
     implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation("com.google.firebase:firebase-firestore-ktx:24.9.0")
+
 
 }

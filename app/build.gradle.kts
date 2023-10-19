@@ -39,6 +39,7 @@ android {
 
     buildFeatures{
         viewBinding = true
+        dataBinding = true
     }
 }
 
@@ -65,6 +66,7 @@ dependencies {
 
     implementation("com.google.firebase:firebase-analytics-ktx")
     implementation("com.google.firebase:firebase-firestore-ktx:24.9.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
 
 
 }

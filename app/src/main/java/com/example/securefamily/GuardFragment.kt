@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.securefamily.databinding.FragmentGuardBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
@@ -40,8 +41,8 @@ class GuardFragment : Fragment(),InviteMailAdapter.OnActionClick {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         binding.sendInvite.setOnClickListener {
+            Toast.makeText(context, "Invite Sent", Toast.LENGTH_LONG).show()
             sendInvite()
         }
         getInvites()
@@ -95,6 +96,8 @@ class GuardFragment : Fragment(),InviteMailAdapter.OnActionClick {
 
             }
 
+
+
     }
 
     companion object {
@@ -127,7 +130,6 @@ class GuardFragment : Fragment(),InviteMailAdapter.OnActionClick {
 
    override fun onDenyClick(mail: String) {
         Log.d("invite89", "onDenyClick: $mail")
-
 
         val firestore = Firebase.firestore
 

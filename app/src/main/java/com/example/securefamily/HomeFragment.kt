@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.securefamily.R
@@ -47,34 +49,27 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        getView()?.findViewById<Button>(R.id.ite_button)?.setOnClickListener {
+            Toast.makeText(context, "Invite Sent", Toast.LENGTH_LONG).show()
+        }
+
         Log.d("FetchContact89", "onViewCreated: ")
 
         val listMembers = listOf<MemberModel>(
             MemberModel(
-                "Lokesh",
-                "9th buildind, 2nd floor, maldiv road, manali 9th buildind, 2nd floor",
-                "90%",
-                "220"
+                "Lakshami",
+                "Qutub Vihar 1, Goyal Village, Delhi , 110071",
+                "50%",
+                "1300m"
             ),
             MemberModel(
-                "Kedia",
-                "10th buildind, 3rd floor, maldiv road, manali 10th buildind, 3rd floor",
-                "80%",
-                "210"
-            ),
-            MemberModel(
-                "D4D5",
-                "11th buildind, 4th floor, maldiv road, manali 11th buildind, 4th floor",
-                "70%",
-                "200"
-            ),
-            MemberModel(
-                "Ramesh",
-                "12th buildind, 5th floor, maldiv road, manali 12th buildind, 5th floor",
-                "60%",
-                "190"
+                "Avinash Kumar",
+                "Sector 16D Dwarka, Kakrola, Delhi, 110075",
+                "34%",
+                "950m"
             ),
         )
+
 
         val adapter = MemberAdapter(listMembers)
 

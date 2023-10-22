@@ -36,7 +36,7 @@ class MapsFragment : Fragment() {
                 Manifest.permission.ACCESS_FINE_LOCATION
             ) == PackageManager.PERMISSION_GRANTED
         ){
-            googleMap.isMyLocationEnabled = true
+             googleMap.isMyLocationEnabled = true
         }
     }
     override fun onCreateView(

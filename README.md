@@ -39,17 +39,22 @@ In an ever-changing world, the safety and well-being of our loved ones remain a 
 
 # Screen Shots
 ## Login Page 
-<img src="ss/1.jpg" height = 420>
+<p align="center"><img src="ss/1.jpg" height = 420>
+</p>
 
 ## Home Fragment
-<img src="ss/2.jpg" height = 420>
+<p align="center"><img src="ss/2.jpg" height = 420></p>
+
 
 ## DashBoard Fragment
-<img src="ss/3.jpg" height = 420>
+<p align="center"><img src="ss/3.jpg" height = 420></p>
+
 
 ## Guard Fragment
-<img src="ss/4.jpg" height = 420>
+<p align="center"><img src="ss/4.jpg" height = 420></p>
+
 
 ## Profile fragment
-<img src="ss/5.jpg" height = 420>
+<p align="center"><img src="ss/5.jpg" height = 420></p>
+
 

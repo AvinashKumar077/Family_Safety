@@ -1,6 +1,6 @@
 <img src="ss/Your paragraph text.png">
 
-# Family_Safety
+# Family_Security
 
 
 In an ever-changing world, the safety and well-being of our loved ones remain a top priority. We understand the challenges families face in staying connected, tracking each other's locations, and responding to emergencies. That's why we've developed "FamilyGuard," a comprehensive family security app that simplifies and enhances your family's safety. With real-time location tracking, secure communication, and seamless integration, FamilyGuard offers you the peace of mind you've been looking for. Join us today as we unveil a new era of family security.
